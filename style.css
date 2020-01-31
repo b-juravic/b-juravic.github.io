@@ -1,0 +1,253 @@
+/* styled for mobile first */
+/* width & height values correspond to width/height of content + padding + borders */
+* {
+  box-sizing: border-box;
+}
+
+/* 0 margin around entire body */
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav, .intro {
+  width: 100%;
+  padding: 4%;
+  background-color: #282828;
+  color: white;
+  font-family: 'futura', arial;
+}
+
+.nav {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+.nav-link {
+  display: none;
+}
+
+.nav-link:hover {
+  background-color: #080808;
+}
+
+.intro {
+  width: 100%;
+  padding: 20% 10%;
+  font-size: 2.0em;
+  text-align: center;
+}
+
+#inner-intro {
+  font-size: .75em;
+  font-style: italic;
+}
+
+#logo {
+  width: 18%;
+  position: absolute;
+  right: 0;
+  left:0;
+  top: -.6%;
+  margin: auto;
+}
+
+#pic1, #pic2, #pic3 {
+display: block;
+max-width: 100%;
+}
+
+#about-me {
+  max-width: 100%;
+  background-color: #ccffe5;
+  padding: 10%;
+  color: #282828;
+  text-align: left;
+}
+
+#hire-me {
+  padding: 26%;
+  text-align: center;
+  background-color: #e9d5c8;
+}
+
+#contact-me {
+  text-align: center;
+  padding: 15% 18%;
+  background-color: #8c8c8c;
+  color: white;
+}
+
+.heading {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  color: white;
+  background-color: #282828;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-family: 'futura', Arial;
+  text-align: center;
+}
+
+/* Styled for large media */
+@media screen and (min-width: 1187px) {
+  .nav {
+    padding: 1.5%;
+  }
+
+  .nav-link {
+    display: inline;
+  }
+
+  #logo {
+    width: 10%;
+  }
+
+  .intro {
+    padding: 15% 20%;
+    font-size: 3.7em;
+  }
+
+  #inner-intro {
+    font-size: .69em;
+  }
+
+  .content-container {
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    width: 100%;
+  }
+
+  #contact-me, #about-me, #hire-me, #pic1, #pic2, #pic3 {
+    width: 33.3%;
+  }
+
+  #contact-me {
+    padding: 10% 6%;
+    font-size: 1.14em;
+    text-align: left;
+  }
+
+  #about-me {
+    font-size: 1.14em;
+    padding: 7.5% 4.5%;
+  }
+
+  #hire-me {
+    padding: 15% 2%;
+  }
+}
+
+@media screen and (max-width: 1186px) and (min-width: 1024px) {
+  .nav {
+    padding: 1.5%;
+  }
+
+  #logo {
+    width: 10%;
+  }
+
+  .intro {
+    padding: 15% 20%;
+    font-size: 3.17em;
+  }
+
+  #inner-intro {
+    font-size: .69em;
+  }
+
+  .content-container {
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    width: 100%;
+  }
+
+  #contact-me, #about-me, #hire-me, #pic1, #pic2, #pic3 {
+    width: 33.3%;
+  }
+
+  #contact-me {
+    padding: 8% 4%;
+    font-size: 1.14em;
+  }
+
+  #about-me {
+    font-size: 1.14em;
+    padding: 7.5% 3%;
+  }
+
+  #hire-me {
+    padding: 15% 5%;
+  }
+
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .nav {
+    padding: 2.2%;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  #logo {
+    width: 10%;
+  }
+
+  .intro {
+    padding: 15% 20%;
+    font-size: 3.17em;
+  }
+
+  #inner-intro {
+    font-size: .69em;
+  }
+
+  .content-container {
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    width: 100%;
+  }
+
+  #contact-me, #about-me, #hire-me, #pic1, #pic2, #pic3 {
+    width: 50%;
+  }
+
+  #contact-me {
+    padding: 8% 4%;
+    font-size: 1.14em;
+  }
+
+  #about-me {
+    font-size: 1.14em;
+    padding: 7.5% 3%;
+  }
+
+  #hire-me {
+    padding: 15% 5%;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .intro {
+    font-size: 1.7em;
+  }
+
+  #hire-me {
+    padding: 30% 4%;
+  }
+
+  #contact-me {
+    padding: 8% 4%;
+  }
+}
