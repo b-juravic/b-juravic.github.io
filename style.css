@@ -16,13 +16,13 @@ body {
 
 .nav, .intro {
   width: 100%;
-  padding: 4%;
   background-color: #282828;
   color: white;
   font-family: 'futura', arial;
 }
 
 .nav {
+  padding: 4%;
   border-bottom-style: solid;
   border-bottom-color: white;
 }
@@ -37,7 +37,7 @@ body {
 
 .intro {
   width: 100%;
-  padding: 20% 10%;
+  padding: 30% 10%;
   font-size: 2.0em;
   text-align: center;
 }
@@ -70,7 +70,7 @@ max-width: 100%;
 }
 
 #hire-me {
-  padding: 26%;
+  padding: 30% 26%;
   text-align: center;
   background-color: #e9d5c8;
 }
